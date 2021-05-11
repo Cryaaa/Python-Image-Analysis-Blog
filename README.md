@@ -11,8 +11,8 @@ Another nice explanation of the command line can be found by Sreeni [here](https
 
 To get Started with your first programs in python I would suggest you follow the tutorial on setting up an environment after installing anaconda. I can offer a bonus tip for creating conda environments and that is to install a specific python version (some libraries won't work with the newest python version but you may find that out yourself) and how to install all the essential scientific libraries included in anaconda. To do this you need to initialise a conda environment as follows:
 
-'''shell
+```sh
 C:\Users\yourusername> conda create -n your_environment_name python=3.8 anaconda 
-'''
+```
 
 You have to replace 'your_environment_name' with a name of your choosing and can choose any python version that works with your libraries. For now you can omit the line 'python=3.8' but if you run into problems you can go and add it again!
