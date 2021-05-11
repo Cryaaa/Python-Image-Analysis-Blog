@@ -15,4 +15,7 @@ To get Started with your first programs in python I would suggest you follow the
 C:\Users\yourusername> conda create -n your_environment_name python=3.8 anaconda 
 ```
 
-You have to replace 'your_environment_name' with a name of your choosing and can choose any python version that works with your libraries. For now you can omit the line 'python=3.8' but if you run into problems you can go and add it again!
+You have to replace 'your_environment_name' with a name of your choosing and can choose any python version that works with your libraries. For now you can omit the line 'python=3.8' but if you run into problems you can use this line to install any python version you wish to. 
+
+## The Basics
+To be frank I cannot teach all the basics of python anywhere near as well as the plethora of people on youtube and various blogs and sites across the internet. What I can do is give you some of the resources I have used to get into python, which you might also like. If you are starting completely from scratch I would advise you to watch [this](https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org) video but if you have some basic understanding of coding the introduction to pythonic programming by [Sreeni](https://www.youtube.com/watch?v=qgJLeDPT8UM&list=PLZsOBAyNTZwbIjGnolFydAN33gyyGP7lT&index=6&ab_channel=DigitalSreeniDigitalSreeni) might be more suited. The video series by Sreeni covers a large part of image analysis and python programming and is a resource I often like to come back to myself. The third option
