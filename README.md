@@ -27,4 +27,11 @@ If you have some basic understanding of coding the introduction to pythonic prog
 
 The third option is to watch the lectures I had introducing python programming [here](https://www.youtube.com/watch?v=MOEPe9TGBK0). This is also a series that I would advise on watching to get an understanding of image analysis (afterall it's what got me into image analysis) but it's focussed on another program used for image analysis called ImageJ. This years lecture can be found [on github](https://github.com/BiAPoL/Bio-image_Analysis_with_Python). It revolves around python and is another great resource to get started with programming and image analysis in python.
 
+## Some Tricks for Beginners
+These are some links that I have found extremely useful for writing code more easily. Especially the enumerate looping and list comprehensions are things I wish I had discovered earlier:
+* [zip in for loops](https://stackoverflow.com/questions/18648626/for-loop-with-two-variables)
+* [enumerate in for loops](https://realpython.com/python-enumerate/)
+* [list comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
+
+
 
