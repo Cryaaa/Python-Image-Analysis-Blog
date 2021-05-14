@@ -1,5 +1,10 @@
-# Intorduction to Using Python for Image Analysis
-## Setting up your Enviroment
+# Extending ImageJ Macro auto completion in Fijis script editor
+## Outline
+* [Intorduction to Using Python for Image Analysis](https://cryaaa.github.io/Python-Image-Analysis-Blog/#introduction)
+
+<a name="introduction"></a>
+## Intorduction to Using Python for Image Analysis
+### Setting up your Enviroment
 To get started using python the first step is the installation and there are several ways you can do it. To make it easier for your future self it's a good idea to set up a virtual environment. You can think of this as a virtual installation folder where you install all your python libraries (basically just functions that other people have written).
 One way to manage these environments is [anaconda](https://www.anaconda.com/products/individual)
 This will not only install anaconda, the software to manage your environments but also a lot of libraries commonly needed for scientific python programs. 
@@ -20,20 +25,20 @@ C:\Users\yourusername> conda create -n your_environment_name python=3.8 anaconda
 
 You have to replace 'your_environment_name' with a name of your choosing and can choose any python version that works with your libraries. For now you can omit the line 'python=3.8' but if you run into problems you can use this line to install any python version you wish to. The command 'anaconda' at the end will install all the libraries that come preinstalled with anaconda to your new environment. It can happen that your environment breaks because you mess up an installation or a library is not compatible with another or incompatible with the installed python version. Don't panic that is normal and happens. Just go ahead and create a new environment and reinstall the libraries you need. 
 
-## The Basics
+### The Basics
 To be frank I cannot teach all the basics of python anywhere near as well as the plethora of people on youtube and various blogs and sites across the internet. What I can do is give you some of the resources I have used to get into python, which you might also like. If you are starting completely from scratch I would advise you to watch [this](https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org) video
 
 If you have some basic understanding of coding the introduction to pythonic programming by [Sreeni](https://www.youtube.com/watch?v=qgJLeDPT8UM&list=PLZsOBAyNTZwbIjGnolFydAN33gyyGP7lT&index=6&ab_channel=DigitalSreeniDigitalSreeni) might be more suited. The video series by Sreeni covers a large part of image analysis and python programming and is a resource I often like to come back to myself. 
 
 The third option is to watch the lectures I had introducing python programming [here](https://www.youtube.com/watch?v=MOEPe9TGBK0). This is also a series that I would advise on watching to get an understanding of image analysis (afterall it's what got me into image analysis) but it's focussed on another program used for image analysis called ImageJ. This years lecture can be found [on github](https://github.com/BiAPoL/Bio-image_Analysis_with_Python). It revolves around python and is another great resource to get started with programming and image analysis in python.
 
-## Some Tricks for Beginners
+### Some Tricks for Beginners
 These are some links that I have found extremely useful for writing code more easily. Especially the enumerate looping and list comprehensions are things I wish I had discovered earlier:
 * [zip in for loops](https://stackoverflow.com/questions/18648626/for-loop-with-two-variables)
 * [enumerate in for loops](https://realpython.com/python-enumerate/)
 * [list comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
 
-## Numpy
+### Numpy
 When we are performing image analysis in python we have to understand the basics of numpy, since almost all image analysis in python is based partly on numpy. Learning the basics of numpy and how it handles arrays is extremely important as pictures are handled as numpy arrays. If you are following the tutorials provided by Sreeni you will have noticed a fairly long video on numpy arrays already. This is a [great video](https://www.youtube.com/watch?v=4uFs1qouPEI&list=PLZsOBAyNTZwbIjGnolFydAN33gyyGP7lT&index=12&ab_channel=DigitalSreeniDigitalSreeni) for understanding the importance of numpy for image processing and I advise you to familiarise yourself with it! I'm also still learning numpy and it's various functions and the best way to find out what functions you need for a task is Google. Numpy is a large library and learning each function in one go will be impossible so find solutions along the way and you will find yourself becoming familiar with its functions. 
 
 #### And those are the basics you'll need to get started with image analysis in python. Next time we'll get straight into analysing some data and learning further tips and tricks!
