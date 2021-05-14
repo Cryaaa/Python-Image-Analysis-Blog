@@ -1,5 +1,5 @@
-# Extending ImageJ Macro auto completion in Fijis script editor
-## Outline
+# Image Analysis in Python from a Biologist for Biologists
+## Topics
 * [Intorduction to Using Python for Image Analysis](https://cryaaa.github.io/Python-Image-Analysis-Blog/#introduction)
 
 <a name="introduction"></a>
