@@ -36,3 +36,5 @@ These are some links that I have found extremely useful for writing code more ea
 
 
 #### And those are the basics you'll need to get started with image analysis in python. Next time we'll get straight into analysing some data and learning further tips and tricks!
+
+[Home](https://cryaaa.github.io/Python-Image-Analysis-Blog/)
