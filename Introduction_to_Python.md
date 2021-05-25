@@ -142,5 +142,6 @@ print (results_comprehension)
 What we are doing is writing the contents of the for loop inside array brackets. This makes creating new lists much more short  and I find the code to be a lot cleaner. This method also works for dictionaries and if you want to find out more some links are [here](https://www.w3schools.com/python/python_lists_comprehension.asp) and [here](https://stackoverflow.com/questions/5352546/extract-subset-of-key-value-pairs-from-python-dictionary-object).
 
 #### And those are the basics you'll need to get started with image analysis in python. Next time we'll get straight into analysing some data and learning further tips and tricks!
+If you want to try out the code in this post just look through the [github repository](https://github.com/Cryaaa/Python-Image-Analysis-Blog/tree/gh-pages), where all code is availible for you to download and try!
 
 [Home](https://cryaaa.github.io/Python-Image-Analysis-Blog/)
