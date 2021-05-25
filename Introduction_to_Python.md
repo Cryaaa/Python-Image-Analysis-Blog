@@ -29,7 +29,52 @@ If you have some basic understanding of coding the introduction to pythonic prog
 The third option is to watch the lectures I had introducing python programming [here](https://www.youtube.com/watch?v=MOEPe9TGBK0). This is also a series that I would advise on watching to get an understanding of image analysis (afterall it's what got me into image analysis) but it's focussed on another program used for image analysis called ImageJ. This years lecture can be found [on github](https://github.com/BiAPoL/Bio-image_Analysis_with_Python). It revolves around python and is another great resource to get started with programming and image analysis in python.
 
 ## Some Tricks for Beginners
-These are some links that I have found extremely useful for writing code more easily. Especially the enumerate looping and list comprehensions are things I wish I had discovered earlier:
+Something that you will likely come across a lot is iteration. Ususally you iterate over timepoints, objects or results by using loops. The for-loop is the most common and there are a few tips and tricks that can make your life easier when using loops. I learned it [here](https://realpython.com/python-enumerate/) if you are interested.
+The first one I want to show you is the enumerate function, as I use this quite frequently. It allows you to have an additional index to what you are looping through in the loop:
+
+
+```python
+# This is our list that we will loop through and at the moment it contains strings
+loop_list = ['gaussian blur','background subtraction', 'thresholding', 'analysis']
+
+# we can loop through it with a for loop and see what is printed out
+for method in loop_list:
+    print(method)
+```
+
+    gaussian blur
+    background subtraction
+    thresholding
+    analysis
+    
+
+If we want to know what index each element has we can use enumerate to get this information:
+
+
+```python
+# The enumerate function returns the index of the element of the list and the actual element as a tupule and we can acess 
+# both at the same time through this way of for looping
+for index, method in enumerate(loop_list):
+    
+    # The curly brackets below are a placeholder in the string. Whatever is in the brackets after .format() will be inserted
+    # as a string. This is extremely useful when you want to include indices in a  string, for example when you are saving
+    # files! 
+    print(method + 'is at index {}'.format(index))
+```
+
+    gaussian bluris at index 0
+    background subtractionis at index 1
+    thresholdingis at index 2
+    analysisis at index 3
+    
+
+
+```python
+
+```
+
+
+
 * [zip in for loops](https://stackoverflow.com/questions/18648626/for-loop-with-two-variables)
 * [enumerate in for loops](https://realpython.com/python-enumerate/)
 * [list comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
