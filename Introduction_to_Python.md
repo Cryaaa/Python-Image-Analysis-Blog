@@ -29,7 +29,8 @@ If you have some basic understanding of coding the introduction to pythonic prog
 The third option is to watch the lectures I had introducing python programming [here](https://www.youtube.com/watch?v=MOEPe9TGBK0). This is also a series that I would advise on watching to get an understanding of image analysis (afterall it's what got me into image analysis) but it's focussed on another program used for image analysis called ImageJ. This years lecture can be found [on github](https://github.com/BiAPoL/Bio-image_Analysis_with_Python). It revolves around python and is another great resource to get started with programming and image analysis in python.
 
 ## Some Tricks for Beginners
-Something that you will likely come across a lot is iteration. Ususally you iterate over timepoints, objects or results by using loops. The for-loop is the most common and there are a few tips and tricks that can make your life easier when using loops. I learned it [here](https://realpython.com/python-enumerate/) if you are interested.
+### Enumerate
+Something that you will likely come across a lot is iteration. Ususally you iterate over timepoints, objects or results by using loops. The for-loop is the most common and there are a few tips and tricks that can make your life easier when using loops. I learnt about it [here](https://realpython.com/python-enumerate/) if you are interested in my resources.
 The first one I want to show you is the enumerate function, as I use this quite frequently. It allows you to have an additional index to what you are looping through in the loop:
 
 
@@ -67,18 +68,70 @@ for index, method in enumerate(loop_list):
     thresholdingis at index 2
     analysisis at index 3
     
+### Zip
+The [zip-operator](https://www.w3schools.com/python/ref_func_zip.asp) allows you to similarly loop with two variables but you are free to chose what they are. I use it mainly to loop through two lists at the same time for example if i need to work with two images at the same time. If the two lists are not of the same length you need to be cautious as it will only loop through the shorter list and leave out variables of the longer list. Here I will show the simplest case of printing two words together from two lists:
 
 
 ```python
+# This is the list of methods we used before
+loop_list = ['gaussian blur','background subtraction', 'thresholding', 'analysis']
 
+# These are our processingtimes, notice it has one element more than our methods
+processingtimes = [12,45,67,120,78]
+
+# with the zip operator we can loop through both
+for method, time in zip(loop_list, processingtimes):
+    print(method + 'took {} seconds'.format(time))
 ```
 
+    gaussian blurtook 12 seconds
+    background subtractiontook 45 seconds
+    thresholdingtook 67 seconds
+    analysistook 120 seconds
+    
+
+What zip actually does is create a list of tupules of the two input arrays. We can then acess both of these elements at once when using a for-loop. If one list is shorter then it will only loop through the indices of the shorter list as we can see that the last element in processingtimes is not printed.
+
+### List Comprehension
+The last trick I want to show you is list comprehension. I love it because it gets rid of a lot of lines of code that you have to write manually otherwise. I will show you the long version and how list comprehension can replace these lines. In this basic example we will do some basic math with two lists  and save the results in a third:
 
 
-* [zip in for loops](https://stackoverflow.com/questions/18648626/for-loop-with-two-variables)
-* [enumerate in for loops](https://realpython.com/python-enumerate/)
-* [list comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
+```python
+# These are the numbers we will subtract from eachother
+numbers1 = [5, 7, 10, 4]
+numbers2 = [1, 3, 1, 2]
 
+# This is the empty list we will savethe results in
+results = []
+
+# To subtract numbers2 from numbers1 we have to iterate over both which we can do with the zip function
+for numb1, numb2 in zip(numbers1, numbers2):
+    # doing the math
+    result = numb1 - numb2
+    
+    # adding the result to the list of results
+    results.append(result)
+    
+print(results)
+```
+
+    [4, 4, 9, 2]
+    
+
+With list comprehension we can write the above code in only one line:
+
+
+```python
+# Writing the for loop as a list comprehension
+results_comprehension = [numb1-numb2 for numb1, numb2 in zip(numbers1, numbers2)]
+
+print (results_comprehension)
+```
+
+    [4, 4, 9, 2]
+    
+
+What we are doing is writing the contents of the for loop inside array brackets. This makes creating new lists much more short  and I find the code to be a lot cleaner. This method also works for dictionaries and if you want to find out more some links are [here](https://www.w3schools.com/python/python_lists_comprehension.asp) and [here](https://stackoverflow.com/questions/5352546/extract-subset-of-key-value-pairs-from-python-dictionary-object).
 
 #### And those are the basics you'll need to get started with image analysis in python. Next time we'll get straight into analysing some data and learning further tips and tricks!
 
