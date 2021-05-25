@@ -35,10 +35,12 @@ The first one I want to show you is the enumerate function, as I use this quite 
 
 
 ```python
-# This is our list that we will loop through and at the moment it contains strings
-loop_list = ['gaussian blur','background subtraction', 'thresholding', 'analysis']
+# This is our list that we will loop through and at the moment it 
+# contains strings
+loop_list = ['gaussian blur','background subtraction', 
+             'thresholding', 'analysis']
 
-# we can loop through it with a for loop and see what is printed out
+# we can loop through it with a for loop and see what is printed
 for method in loop_list:
     print(method)
 ```
@@ -53,12 +55,15 @@ If we want to know what index each element has we can use enumerate to get this 
 
 
 ```python
-# The enumerate function returns the index of the element of the list and the actual element as a tupule and we can acess 
+# The enumerate function returns the index of the element of the 
+# list and the actual element as a tupule and we can acess 
 # both at the same time through this way of for looping
 for index, method in enumerate(loop_list):
     
-    # The curly brackets below are a placeholder in the string. Whatever is in the brackets after .format() will be inserted
-    # as a string. This is extremely useful when you want to include indices in a  string, for example when you are saving
+    # The curly brackets below are a placeholder in the string. 
+    # Whatever is in the brackets after .format() will be inserted
+    # as a string. This is extremely useful when you want to 
+    # include indices in a  string, for example when you are saving
     # files! 
     print(method + 'is at index {}'.format(index))
 ```
@@ -74,9 +79,11 @@ The [zip-operator](https://www.w3schools.com/python/ref_func_zip.asp) allows you
 
 ```python
 # This is the list of methods we used before
-loop_list = ['gaussian blur','background subtraction', 'thresholding', 'analysis']
+loop_list = ['gaussian blur','background subtraction', 
+             'thresholding', 'analysis']
 
-# These are our processingtimes, notice it has one element more than our methods
+# These are our processingtimes, notice it has one element 
+# more than our methods
 processingtimes = [12,45,67,120,78]
 
 # with the zip operator we can loop through both
@@ -104,7 +111,8 @@ numbers2 = [1, 3, 1, 2]
 # This is the empty list we will savethe results in
 results = []
 
-# To subtract numbers2 from numbers1 we have to iterate over both which we can do with the zip function
+# To subtract numbers2 from numbers1 we have to iterate 
+# over both which we can do with the zip function
 for numb1, numb2 in zip(numbers1, numbers2):
     # doing the math
     result = numb1 - numb2
