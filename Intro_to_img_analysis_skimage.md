@@ -59,19 +59,6 @@ plt.figure(figsize=(10,10))
 # configured size
 io.imshow(tribolium)
 ```
-
-    C:\Users\ryans\miniconda3\envs\masterthesis_oldpy_v2\lib\site-packages\skimage\io\_plugins\matplotlib_plugin.py:150: UserWarning: Low image data range; displaying image with stretched contrast.
-      lo, hi, cmap = _get_display_range(image)
-    
-
-
-
-
-    <matplotlib.image.AxesImage at 0x233a37c8e80>
-
-
-
-
     
 ![png](02_Intro_to_img_analysis_skimage/output_7_2.png)
     
@@ -141,8 +128,6 @@ ax2.set_title("Tresholded Nuclei")
 # showing the plots
 plt.show()
 ```
-
-
     
 ![png](02_Intro_to_img_analysis_skimage/output_11_0.png)
     
@@ -236,14 +221,6 @@ ax3.set_title('Thresholded Image')
 ```
 
 
-
-
-    Text(0.5, 1.0, 'Thresholded Image')
-
-
-
-
-    
 ![png](02_Intro_to_img_analysis_skimage/output_15_1.png)
     
 
@@ -269,15 +246,7 @@ ax2.imshow(labelled_tribolium)
 ax2.set_title('Connected Componets Analysis')
 ```
 
-
-
-
-    Text(0.5, 1.0, 'Connected Componets Analysis')
-
-
-
-
-    
+   
 ![png](02_Intro_to_img_analysis_skimage/output_17_1.png)
     
 
@@ -307,16 +276,7 @@ fig, ax1 = plt.subplots(1, 1, figsize =(20,20))
 ax1.imshow(labelled_tribolium, cmap = matplotlib.colors.ListedColormap(randcmap))
 ax1.set_title('Connected Componets Analysis')
 ```
-
-
-
-
-    Text(0.5, 1.0, 'Connected Componets Analysis')
-
-
-
-
-    
+  
 ![png](02_Intro_to_img_analysis_skimage/output_19_1.png)
     
 
