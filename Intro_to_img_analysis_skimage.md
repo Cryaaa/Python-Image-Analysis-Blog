@@ -4,7 +4,8 @@ The first step in any program is to import the libraries needed. You can import 
 
 
 ```python
-# we are importing it as 'np' to make the code that we have to write shorter
+# we are importing it as 'np' to make the 
+# code that we have to write shorter
 import numpy as np
 ```
 
@@ -322,7 +323,4 @@ ax1.set_title('Connected Componets Analysis')
 
 Even though the borders of the nuclei are slightly bugggy and show what seem to be rainbows the cells can be differentiated from eachother much more easily and we finally have a good result for the workflow. Next time we will get into another method for achieving segmentations without relying on thresholding!
 
-
-```python
-
-```
+## [Home](https://cryaaa.github.io/Python-Image-Analysis-Blog/)
