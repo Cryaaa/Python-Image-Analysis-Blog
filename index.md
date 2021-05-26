@@ -6,5 +6,6 @@ Below you'll find an index of topics that I'll cover, which will be updated with
 
 ## Topics
 * [Intorduction to Using Python for Image Analysis](https://cryaaa.github.io/Python-Image-Analysis-Blog/Introduction_to_Python)
+* [Introduction to Image Analysis Basics in Python with Scikit Image](https://cryaaa.github.io/Python-Image-Analysis-Blog/Intro_to_img_analysis_skimage)
 
 #### Have Fun Coding!
