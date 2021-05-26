@@ -144,4 +144,4 @@ What we are doing is writing the contents of the for loop inside array brackets.
 #### And those are the basics you'll need to get started with image analysis in python. Next time we'll get straight into analysing some data and learning further tips and tricks!
 If you want to try out the code in this post just look through the [github repository](https://github.com/Cryaaa/Python-Image-Analysis-Blog/tree/gh-pages), where all code is availible for you to download and try!
 
-[Home](https://cryaaa.github.io/Python-Image-Analysis-Blog/)
+## [Home](https://cryaaa.github.io/Python-Image-Analysis-Blog/)
