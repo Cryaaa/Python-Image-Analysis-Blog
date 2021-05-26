@@ -72,7 +72,7 @@ io.imshow(tribolium)
 
 
     
-![png](output_7_2.png)
+![png](02_Intro_to_img_analysis_skimage/output_7_2.png)
     
 
 
@@ -98,7 +98,7 @@ plt.show()
 
 
     
-![png](output_9_0.png)
+![png](02_Intro_to_img_analysis_skimage/output_9_0.png)
     
 
 
@@ -143,7 +143,7 @@ plt.show()
 
 
     
-![png](output_11_0.png)
+![png](02_Intro_to_img_analysis_skimage/output_11_0.png)
     
 
 
@@ -191,7 +191,7 @@ plt.show()
 
 
     
-![png](output_13_0.png)
+![png](02_Intro_to_img_analysis_skimage/output_13_0.png)
     
 
 
@@ -243,7 +243,7 @@ ax3.set_title('Thresholded Image')
 
 
     
-![png](output_15_1.png)
+![png](02_Intro_to_img_analysis_skimage/output_15_1.png)
     
 
 
@@ -277,7 +277,7 @@ ax2.set_title('Connected Componets Analysis')
 
 
     
-![png](output_17_1.png)
+![png](02_Intro_to_img_analysis_skimage/output_17_1.png)
     
 
 
@@ -316,7 +316,7 @@ ax1.set_title('Connected Componets Analysis')
 
 
     
-![png](output_19_1.png)
+![png](02_Intro_to_img_analysis_skimage/output_19_1.png)
     
 
 
